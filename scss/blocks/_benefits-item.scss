@@ -1,0 +1,52 @@
+.benefits-item {
+   width: 100%;
+   max-width: 224px;
+
+   @media (max-width: 1024px) {
+      width: 47%;
+      max-width: none;
+      text-align: center;
+   }
+   
+   @media (max-width: 350px) {
+      width: 100%;
+   }
+
+   &__icon {
+      margin: 0 0 10px;
+      max-width: 100px;
+
+      @media (max-width: 1024px) {
+         margin: 0 auto 10px;
+      }
+      
+      @media (max-width: 576px) {
+         max-width: 70px;
+      }
+   }
+
+   &__title {
+      margin: 0 0 15px;
+      color: $color-secondary;
+      font-size: 24px;
+      font-family: $font-secondary;
+      font-weight: 700;
+      line-height: 125%;
+      
+      @media (max-width: 576px) {
+         margin: 0 0 10px;
+         font-size: 20px;
+      }
+   }
+
+   &__text {
+      color: $color-primary;
+      font-size: 16px;
+      font-family: $font-primary;
+      line-height: 145%;
+
+      @media (max-width: 576px) {
+         font-size: 14px;
+      }
+   }
+}

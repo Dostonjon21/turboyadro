@@ -1,0 +1,23 @@
+.faq {
+   margin: 0 0 130px;
+
+   @media (max-width: 576px) {
+      margin: 0 0 90px;
+   }
+
+   @media (max-width: 377px) {
+      margin: 0 0 60px;
+   }
+
+   &__title {
+      margin: 0 0 20px;
+
+      @media (max-width: 377px) {
+         margin: 0 0 10px;
+      }
+   }
+
+   &__list {}
+
+   &__item {}
+}

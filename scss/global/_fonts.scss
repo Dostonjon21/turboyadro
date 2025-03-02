@@ -1,0 +1,59 @@
+// Ubuntu
+
+@font-face {
+   font-family: 'Ubuntu';
+   src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+      url('../fonts/Ubuntu-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Ubuntu';
+   src: url('../fonts/Ubuntu-Medium.woff2') format('woff2'),
+      url('../fonts/Ubuntu-Medium.woff') format('woff');
+   font-weight: 500;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Ubuntu';
+   src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+      url('../fonts/Ubuntu-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+// Inter
+
+@font-face {
+   font-family: 'Inter';
+   src: url('../fonts/Inter-Bold.woff2') format('woff2'),
+      url('../fonts/Inter-Bold.woff') format('woff');
+   font-weight: 700;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Inter';
+   src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+      url('../fonts/Inter-Regular.woff') format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+// MV Boli
+
+@font-face {
+   font-family: 'MV Boli';
+   src: url('../fonts/MVBoli.woff2') format('woff2'),
+      url('../fonts/MVBoli.woff') format('woff');
+   font-weight: 400;
+   font-style: italic;
+   font-display: swap;
+}

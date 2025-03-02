@@ -1,0 +1,34 @@
+.btn {
+   padding: 20px;
+   min-width: 220px;
+   color: #FFF;
+   text-align: center;
+   font-size: 14px;
+   font-family: $font-secondary;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+   border-radius: 30px;
+   background: $color-accent;
+   border: 2px solid $color-accent;
+
+   @media (max-width: 377px) {
+      padding: 17px;
+      min-width: 260px;
+      font-size: 12px;
+   }
+
+   &:hover {
+      color: $color-accent;
+      background: #FFF;
+   }
+
+   &--light {
+      padding: 0;
+      min-width: auto;
+      color: #595B62;
+      line-height: 150%;
+      background: transparent;
+      border: none;
+   }
+}

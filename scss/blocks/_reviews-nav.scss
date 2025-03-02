@@ -1,0 +1,73 @@
+.reviews-nav {
+   transform: translateY(-15px);
+   flex-shrink: 0;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+
+   @media (max-width: 1024px) {
+      display: none;
+   }
+
+   &__btn {
+      max-width: 24px;
+      flex-shrink: 0;
+
+      &:hover {
+
+         path {
+            stroke: $color-accent;
+         }
+      }
+
+      path {
+         stroke: $color-secondary;
+      }
+
+      &--prev {}
+
+      &--next {}
+
+      // swiper
+
+      &.swiper-button-disabled {
+         cursor: default;
+
+         path {
+            stroke: #9A9BAD;
+         }
+      }
+   }
+
+   &__pagination-top {
+      color: #9A9BAD;
+      font-family: $font-primary;
+      font-size: 18px;
+
+      // swiper
+
+      .swiper-pagination-current {
+         display: inline-block;
+         min-width: 12px;
+         color: $color-secondary;
+      }
+   }
+
+   &__pagination-bottom {
+
+      @media (max-width: 1024px) {
+         margin: 0 0 25px;
+      }
+
+      // swiper
+
+      .swiper-pagination-bullet {
+         background: #E2E3EF;
+         opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+         background: $color-accent;
+      }
+   }
+}

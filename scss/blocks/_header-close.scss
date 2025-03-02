@@ -1,0 +1,27 @@
+.header-close {
+   position: absolute;
+   top: 30px;
+   right: 15px;
+   display: none;
+   max-width: 35px;
+
+   @media (max-width: 576px) {
+      top: 22px;
+   }
+
+   @media (max-width: 377px) {
+      top: 13px;
+   }
+
+   &:hover {
+
+      .header-close__icon {
+
+         path {
+            stroke: $color-accent;
+         }
+      }
+   }
+
+   &__icon {}
+}

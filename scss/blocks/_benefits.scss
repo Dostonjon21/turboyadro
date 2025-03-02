@@ -1,0 +1,27 @@
+.benefits {
+   margin: 0 0 130px;
+
+   @media (max-width: 576px) {
+      margin: 0 0 90px;
+   }
+
+   @media (max-width: 377px) {
+      margin: 0 0 57px;
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+
+      @media (max-width: 1024px) {
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 30px 15px;
+      }
+
+      @media (max-width: 576px) {
+         gap: 30px 18px;
+      }
+   }
+}

@@ -1,0 +1,66 @@
+.modal-item {
+   padding: 0;
+   max-width: 440px;
+   border-radius: 15px;
+   box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, .15);
+
+   &__title {
+      margin: 0 0 40px;
+      padding: 30px 30px 25px;
+      color: $color-secondary;
+      font-family: $font-secondary;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-bottom: 1px solid #E2E3EF;
+   }
+
+   &__form {
+      padding: 0 30px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @media (max-width: 576px) {
+         padding: 0 20px 20px;
+      }
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+
+      @media (max-width: 377px) {
+         flex-direction: column;
+      }
+   }
+
+   &__form-field {}
+
+   &__form-checkbox {}
+
+   &__btn {
+      min-width: auto;
+   }
+
+   &__btn-light {
+      align-self: center;
+   }
+
+   &__link {
+      color: $color-primary;
+      text-align: right;
+      font-family: $font-secondary;
+      font-size: 16px;
+      line-height: 150%;
+
+      @media (max-width: 377px) {
+         text-align: left;
+      }
+
+      &:hover {
+         color: $color-accent;
+      }
+   }
+}

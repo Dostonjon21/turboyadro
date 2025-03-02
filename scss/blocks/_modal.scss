@@ -1,0 +1,24 @@
+.modal {
+
+
+
+   &.graph-modal {
+      background: rgba(7, 4, 12, .6);
+   }
+
+   .graph-modal__close {
+      top: 24px;
+      right: 24px;
+      width: auto;
+      max-width: 35px;
+      height: auto;
+      background: none;
+
+      &:hover {
+
+         path {
+            stroke: $color-accent;
+         }
+      }
+   }
+}

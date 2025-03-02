@@ -1,0 +1,81 @@
+html,
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+   border: 0;
+   outline: none;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+a {
+   display: inline-block;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+   height: auto;
+}
+
+sub {
+   vertical-align: sub;
+}
+
+sup {
+   vertical-align: super;
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+q,
+blockquote {
+   quotes: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+button {
+   background: transparent;
+   border: none;
+}
+
+button,
+input,
+textarea {
+   font-family: inherit;
+   color: inherit;
+}
+
+input,
+textarea {
+   width: 100%;
+}
+
+button,
+label,
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"] {
+   cursor: pointer;
+}
+
+textarea {
+   resize: none;
+}

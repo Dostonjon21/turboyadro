@@ -1,0 +1,39 @@
+.header-info {
+   padding: 30px 0;
+   display: none;
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &:not(:last-child) {
+         margin: 0 0 20px;
+      }
+   }
+
+   &__title {
+      margin: 0 0 10px;
+      color: $color-primary;
+      text-align: center;
+      font-family: $font-primary;
+      font-size: 14px;
+      line-height: 145%;
+   }
+   
+   &__text {
+      margin: 0 0 10px;
+      color: $color-secondary;
+      text-align: center;
+      font-family: $font-primary;
+      font-size: 16px;
+      line-height: 145%;
+   }
+
+   &__link {
+
+      &:hover {
+         color: $color-accent;
+      }
+   }
+}

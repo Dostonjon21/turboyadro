@@ -1,0 +1,37 @@
+.price {
+   margin: 0 0 130px;
+
+   @media (max-width: 576px) {
+      margin: 0 0 90px;
+   }
+
+   @media (max-width: 377px) {
+      margin: 0 0 60px;
+   }
+
+   &__title {
+      margin: 0 0 40px;
+
+      @media (max-width: 377px) {
+         margin: 0 0 10px;
+      }
+   }
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 30px;
+
+      @media (max-width: 1024px) {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 60px;
+      }
+      
+      @media (max-width: 377px) {
+         gap: 40px;
+      }
+   }
+}

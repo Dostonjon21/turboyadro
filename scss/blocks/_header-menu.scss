@@ -1,0 +1,21 @@
+.header-menu {
+   display: flex;
+   align-items: center;
+   gap: 40px;
+
+   @media (max-width: 1024px) {
+      display: none;
+   }
+
+   &__link {
+      color: $color-secondary;
+      font-size: 14px;
+      font-family: $font-secondary;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      &:hover {
+         color: $color-accent;
+      }
+   }
+}

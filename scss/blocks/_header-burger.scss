@@ -1,0 +1,21 @@
+.header-burger {
+   display: none;
+   flex-shrink: 0;
+   max-width: 35px;
+
+   @media (max-width: 1024px) {
+      display: block;
+   }
+
+   &:hover {
+
+      .header-burger__icon {
+
+         path {
+            stroke: $color-accent;
+         }
+      }
+   }
+
+   &__icon {}
+}

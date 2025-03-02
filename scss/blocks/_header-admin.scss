@@ -1,0 +1,64 @@
+.header-admin {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+
+   @media (max-width: 1024px) {
+      margin: 0 0 0 auto;
+   }
+
+   @media (max-width: 377px) {
+      margin: 0;
+   }
+
+   &__text {
+      display: none;
+      color: $color-primary;
+      text-align: center;
+      font-family: $font-secondary;
+      font-size: 14px;
+   }
+
+   &__btn {
+      color: $color-secondary;
+      font-size: 14px;
+      font-family: $font-secondary;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      &:hover {
+         color: $color-accent;
+      }
+
+      &--register {
+
+         @media (max-width: 1024px) {
+            display: none;
+         }
+      }
+
+      &--login {
+         padding: 11px 19px;
+         min-width: 80px;
+         text-align: center;
+         border-radius: 30px;
+         border: 1px solid #000;
+         transition: color .2s, background .2s, border .2s;
+
+         @media (max-width: 377px) {
+            padding: 0;
+            width: 75px;
+            min-width: auto;
+            height: 34px;
+            font-size: 12px;
+            line-height: 34px;
+         }
+
+         &:hover {
+            color: #fff;
+            background: $color-accent;
+            border-color: $color-accent;
+         }
+      }
+   }
+}

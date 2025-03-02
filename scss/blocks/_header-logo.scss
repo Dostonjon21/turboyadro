@@ -1,0 +1,11 @@
+.header-logo {
+   flex-shrink: 0;
+   max-width: 205px;
+   transition: none;
+
+   @media (max-width: 576px) {
+      max-width: 150px;
+   }
+
+   &__img {}
+}

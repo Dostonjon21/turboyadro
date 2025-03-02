@@ -1,0 +1,72 @@
+.partners-list {
+   padding: 10px 0 0;
+   display: flex;
+   flex-direction: column;
+   gap: 28px;
+
+   @media (max-width: 377px) {
+      gap: 13px;
+   }
+
+   &__item {
+      position: relative;
+      padding: 20px 20px 20px 56px;
+      max-width: 626px;
+      border-radius: 15px;
+      border: 1px dashed #E2E3EF;
+      transition: .3s;
+
+      @media (max-width: 1024px) {
+         max-width: none;
+      }
+      
+      @media (max-width: 377px) {
+         padding: 15px 15px 20px 50px;
+      }
+
+      &:hover {
+         border-color: transparent;
+         box-shadow: 0px 8px 40px 0px rgba(0, 0, 0, 0.15);
+      }
+   }
+
+   &__icon {
+      position: absolute;
+      top: 22px;
+      left: 19px;
+      max-width: 21px;
+
+      @media (max-width: 377px) {
+         top: 18px;
+         left: 14px;
+      }
+   }
+
+   &__title {
+      margin: 0 0 15px;
+      color: $color-secondary;
+      font-family: $font-secondary;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 125%;
+
+      @media (max-width: 576px) {
+         font-size: 20px;
+      }
+
+      @media (max-width: 377px) {
+         margin: 0 0 10px;
+      }
+   }
+
+   &__text {
+      color: $color-primary;
+      font-family: $font-primary;
+      font-size: 16px;
+      line-height: 145%;
+
+      @media (max-width: 377px) {
+         font-size: 15px;
+      }
+   }
+}

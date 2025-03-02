@@ -1,0 +1,64 @@
+.price-benefits {
+   max-width: 560px;
+
+   &__item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      
+      &:not(:last-child) {
+         margin: 0 0 30px;
+
+         @media (max-width: 377px) {
+            margin: 0 0 20px;
+         }
+      }
+
+      @media (max-width: 377px) {
+         flex-direction: column;
+      }
+   }
+
+   &__icon {
+      max-width: 100px;
+
+      @media (max-width: 576px) {
+         max-width: 70px;
+      }
+   }
+
+   &__content {
+
+      @media (max-width: 377px) {
+         text-align: center;
+      }
+   }
+
+   &__title {
+      margin: 0 0 15px;
+      color: $color-secondary;
+      font-family: $font-secondary;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 125%;
+
+      @media (max-width: 576px) {
+         font-size: 20px;
+      }
+
+      @media (max-width: 377px) {
+         margin: 0 0 10px;
+      }
+   }
+
+   &__text {
+      color: $color-primary;
+      font-family: $font-primary;
+      font-size: 16px;
+      line-height: 145%;
+
+      @media (max-width: 377px) {
+         font-size: 14px;
+      }
+   }
+}

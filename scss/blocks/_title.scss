@@ -1,0 +1,24 @@
+.title {
+   color: $color-secondary;
+   text-align: center;
+   font-size: 46px;
+   font-family: $font-secondary;
+   font-weight: 700;
+
+   @media (max-width: 576px) {
+      font-size: 36px;
+   }
+
+   @media (max-width: 576px) {
+      font-size: 28px;
+      line-height: 125%;
+   }
+
+   &--left {
+      text-align: left;
+
+      @media (max-width: 1024px) {
+         text-align: center;
+      }
+   }
+}
