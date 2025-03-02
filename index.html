@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <meta name="description" content="Готовая семантика за 1 минуту! Сервис автоматического сбора очищенных запросов для любой страницы сайта">
+
+   <title>Турбо Ядро</title>
+
+   <!-- favicon -->
+   <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="manifest" href="favicon/site.webmanifest">
+   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+   <link rel="shortcut icon" href="favicon/favicon.ico">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="msapplication-config" content="favicon/browserconfig.xml">
+   <meta name="theme-color" content="#fff">
+
+   <!-- css -->
+   <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+
+   <!-- header -->
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+
+            <!-- header logo -->
+            <div class="header-logo">
+               <img class="header-logo__img" src="img/logo.webp" width="205" height="55" alt="Турбо Ядро">
+            </div>
+
+            <!-- header menu -->
+            <nav class="header-menu">
+               <a class="header-menu__link" href="#how-work">
+                  Как работает
+               </a>
+               <a class="header-menu__link" href="#price">
+                  Цены
+               </a>
+               <a class="header-menu__link" href="#faq">
+                  Частые вопросы
+               </a>
+            </nav>
+
+            <!-- header admin -->
+            <nav class="header-admin">
+               <p class="header-admin__text">
+                  Личный кабинет
+               </p>
+               <button class="header-admin__btn header-admin__btn--register" data-graph-path="register" data-graph-animation="fadeInUp">
+                  Регистрация
+               </button>
+               <button class="header-admin__btn header-admin__btn--login" data-graph-path="login" data-graph-animation="fadeInUp">
+                  Вход
+               </button>
+            </nav>
+
+            <!-- header info -->
+            <ul class="header-info">
+               <li class="header-info__item">
+                  <h3 class="header-info__title">
+                     Дни работы поддержки
+                  </h3>
+                  <p class="header-info__text">
+                     ПН-ВС. Каждый день
+                  </p>
+                  <p class="header-info__text">
+                     7:00-20:00 по Москве
+                  </p>
+               </li>
+               <li class="header-info__item">
+                  <h3 class="header-info__title">
+                     Контакты
+                  </h3>
+                  <a class="header-info__text header-info__link" href="mailto:help@turbo-yadro.ru">
+                     help@turbo-yadro.ru
+                  </a>
+                  <a class="header-info__text header-info__link" href="tel:79609969576">
+                     +7-960-996-95-76
+                  </a>
+               </li>
+            </ul>
+
+            <!-- header burger -->
+            <button class="header-burger" aria-label="Открыть Меню">
+               <svg class="header-burger__icon" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 9H31M5 17.5H31M5 26H31" stroke="#07040C" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+            </button>
+
+            <!-- header close -->
+            <button class="header-close" aria-label="Закрыть Меню">
+               <svg class="header-close__icon" width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M26.3848 8L8 26.3848M26.3848 26.3848L8 8" stroke="#07040C" stroke-linecap="round" stroke-linejoin="round" />
+               </svg>
+            </button>
+         </div>
+      </div>
+   </header>
+
+   <!-- promo -->
+   <section class="promo">
+      <div class="container">
+         <div class="promo__inner">
+
+            <!-- promo left -->
+            <div class="promo__left">
+               <h1 class="promo__title">
+                  Готовая семантика за 1 минуту
+               </h1>
+               <p class="promo__text">
+                  Сервис <span class="promo__text-accent">автоматического</span> сбора очищенных запросов для любой страницы сайта
+               </p>
+               <div class="promo__action">
+                  <button class="btn promo__btn" data-graph-path="register" data-graph-animation="fadeInUp">
+                     Попробовать
+                  </button>
+                  <p class="promo__action-text">
+                     При регистрации 500 руб., хватит чтобы влюбиться
+                     <img class="promo__smile" src="img/promo-smile.svg" width="18" height="15" alt="Улыбка">
+                  </p>
+               </div>
+            </div>
+
+            <!-- promo right -->
+            <div class="promo__right">
+               <img class="promo__img" src="img/promo.svg" width="620" height="460" alt="Готовая семантика за 1 минуту">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- benefits -->
+   <div class="benefits">
+      <div class="container">
+         <div class="benefits__inner">
+
+            <!-- benefits item 1 -->
+            <div class="benefits-item">
+               <img class="benefits-item__icon" src="img/benefits-1.svg" width="100" height="100" alt="Избавит от рутины">
+               <p class="benefits-item__title">
+                  Избавит от рутины
+               </p>
+               <p class="benefits-item__text">
+                  Долой чистку, парсинг, группировку
+               </p>
+            </div>
+
+            <!-- benefits item 2 -->
+            <div class="benefits-item">
+               <img class="benefits-item__icon" src="img/benefits-2.svg" width="100" height="100" alt="Легко разобраться">
+               <p class="benefits-item__title">
+                  Легко разобраться
+               </p>
+               <p class="benefits-item__text">
+                  Всего 2 кнопки
+               </p>
+            </div>
+
+            <!-- benefits item 3 -->
+            <div class="benefits-item">
+               <img class="benefits-item__icon" src="img/benefits-3.svg" width="100" height="100" alt="Больше заработаешь">
+               <p class="benefits-item__title">
+                  Больше заработаешь
+               </p>
+               <p class="benefits-item__text">
+                  Высвободится много времени на новых клиентов
+               </p>
+            </div>
+
+            <!-- benefits item 4 -->
+            <div class="benefits-item">
+               <img class="benefits-item__icon" src="img/benefits-4.svg" width="100" height="100" alt="Экономия времени">
+               <p class="benefits-item__title">
+                  Экономия времени
+               </p>
+               <p class="benefits-item__text">
+                  Не надо обучать сотрудников сбору семантики и сложным действиям
+               </p>
+            </div>
+
+            <!-- benefits item 5 -->
+            <div class="benefits-item">
+               <img class="benefits-item__icon" src="img/benefits-5.svg" width="100" height="100" alt="Отсутствие ошибок">
+               <p class="benefits-item__title">
+                  Отсутствие ошибок
+               </p>
+               <p class="benefits-item__text">
+                  Человеческий фактор и лень никто не отменял, влияющие на полноту их сбора
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- know how -->
+   <section class="know-how">
+      <div class="container">
+
+         <!-- know how title -->
+         <h2 class="title know-how__title">
+            Ноу-Хау в Кластеризаторе по Топ-у
+         </h2>
+
+         <!-- know how inner -->
+         <div class="know-how__inner">
+
+            <!-- know how left -->
+            <div class="know-how__left">
+
+               <!-- know how item 1 -->
+
+               <div class="know-how-item">
+                  <img class="know-how-item__icon" src="img/know-how-item-1.svg" alt="Отличительные особенности">
+                  <h3 class="know-how-item__title">
+                     Отличительные особенности
+                  </h3>
+                  <p class="know-how-item__text">
+                     На основе лучших страниц конкурентов по видимости
+                  </p>
+               </div>
+
+               <!-- know how item 2 -->
+
+               <div class="know-how-item">
+                  <img class="know-how-item__icon" src="img/know-how-item-2.svg" alt="Простая логика">
+                  <h3 class="know-how-item__title">
+                     Простая логика
+                  </h3>
+                  <p class="know-how-item__text">
+                     Если они смогли быть в ТОП по этим запросам, значит и вы сможете
+                  </p>
+               </div>
+
+               <!-- know how item 3 -->
+
+               <div class="know-how-item">
+                  <img class="know-how-item__icon" src="img/know-how-item-3.svg" alt="Превосходство метода">
+                  <h3 class="know-how-item__title">
+                     Превосходство метода
+                  </h3>
+                  <ol class="know-how-item__list">
+                     <li class="know-how-item__item">
+                        1. Запросы которые реально посадить на страницу
+                     </li>
+                     <li class="know-how-item__item">
+                        2. Не нужно думать над объединять или разделять по запросам со слабыми связями
+                     </li>
+                  </ol>
+               </div>
+            </div>
+
+            <!-- know how right -->
+            <div class="know-how__right">
+               <img class="know-how__img" src="img/know-how.svg" width="620" height="460" alt="Ноу-Хау в Кластеризаторе по Топ-у">
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- how work -->
+   <section class="how-work" id="how-work">
+      <div class="container">
+
+         <!-- how work title -->
+         <h2 class="title how-work__title">
+            Как работает сервис
+         </h2>
+         <p class="how-work__descr">
+            Процесс состоит из следующих действий
+         </p>
+
+         <!-- how work inner -->
+         <div class="how-work__inner">
+
+            <!-- how work item 1 -->
+            <div class="how-work-item">
+               <div class="how-work-item__top">
+                  <h3 class="how-work-item__title">
+                     <span class="how-work-item__number">1</span>
+                     Сбор запросов конкурентов
+                  </h3>
+               </div>
+               <p class="how-work-item__text">
+                  Берем запросы со страниц конкурентов, используя платные, обновляемые базы
+               </p>
+               <a class="how-work-item__video" href="video/how-work.mp4" data-fancybox>
+                  <img class="how-work-item__video-img" src="img/how-work-video-1.webp" width="390" height="220" alt="Сбор запросов конкурентов">
+                  <img class="how-work-item__play" src="img/how-work-play.svg" alt="Воспроизвести видео">
+               </a>
+            </div>
+
+            <!-- how work item 2 -->
+            <div class="how-work-item">
+               <div class="how-work-item__top">
+                  <h3 class="how-work-item__title">
+                     <span class="how-work-item__number">2</span>
+                     Кластеризация
+                  </h3>
+                  <span class="how-work-item__badge">
+                     Ноу-Хау
+                  </span>
+               </div>
+               <p class="how-work-item__text">
+                  Вначале производится чистка запросов. Далее сбор данных и их обработка с перепроверкой данных
+               </p>
+               <a class="how-work-item__video" href="video/how-work.mp4" data-fancybox>
+                  <img class="how-work-item__video-img" src="img/how-work-video-2.webp" width="390" height="220" alt="Кластеризация">
+                  <img class="how-work-item__play" src="img/how-work-play.svg" alt="Воспроизвести видео">
+               </a>
+            </div>
+
+            <!-- how work item 3 -->
+            <div class="how-work-item">
+               <div class="how-work-item__top">
+                  <h3 class="how-work-item__title">
+                     <span class="how-work-item__number">3</span>
+                     Подготовка готовой семантики
+                  </h3>
+               </div>
+               <p class="how-work-item__text">
+                  Сбор частотности. Определение правильного (самого частотного) порядка слов
+               </p>
+               <a class="how-work-item__video" href="video/how-work.mp4" data-fancybox>
+                  <img class="how-work-item__video-img" src="img/how-work-video-3.webp" width="390" height="220" alt="Подготовка готовой семантики">
+                  <img class="how-work-item__play" src="img/how-work-play.svg" alt="Воспроизвести видео">
+               </a>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- price -->
+   <section class="price" id="price">
+      <div class="container">
+
+         <!-- price title -->
+         <h2 class="title title--left price__title">
+            Цены
+         </h2>
+
+         <!-- price inner -->
+         <div class="price__inner">
+
+            <!-- price services -->
+            <ul class="price-services">
+               <li class="price-services__item">
+                  <div class="price-services__left">
+                     <h3 class="price-services__title">
+                        Функционал
+                     </h3>
+                  </div>
+                  <div class="price-services__right">
+                     <h3 class="price-services__title">
+                        Стоимость
+                     </h3>
+                  </div>
+               </li>
+               <li class="price-services__item">
+                  <div class="price-services__left">
+                     <h4 class="price-services__name">
+                        Сбор запросов по конкурентам
+                     </h4>
+                  </div>
+                  <div class="price-services__right">
+                     <p class="price-services__value">
+                        <span class="price-services__accent">
+                           100 руб.
+                        </span>
+                        за&nbsp;задачу
+                     </p>
+                  </div>
+               </li>
+               <li class="price-services__item">
+                  <div class="price-services__left">
+                     <h4 class="price-services__name">
+                        Класстеризатор по ТОП
+                     </h4>
+                  </div>
+                  <div class="price-services__right">
+                     <p class="price-services__value">
+                        <span class="price-services__accent">
+                           0.1 руб.
+                        </span>
+                        за&nbsp;фразу
+                     </p>
+                  </div>
+               </li>
+            </ul>
+
+            <!-- price benefits -->
+            <ul class="price-benefits">
+               <li class="price-benefits__item">
+                  <img class="price-benefits__icon" src="img/price-benefits-1.svg" width="100" height="100" alt="Никаких тарифов">
+                  <div class="price-benefits__content">
+                     <h3 class="price-benefits__title">
+                        Никаких тарифов
+                     </h3>
+                     <p class="price-benefits__text">
+                        Пополняйте на ту сумму, которую нужно сейчас, не переплачивая за тариф
+                     </p>
+                  </div>
+               </li>
+               <li class="price-benefits__item">
+                  <img class="price-benefits__icon" src="img/price-benefits-2.svg" width="100" height="100" alt="Не сгорает баланс">
+                  <div class="price-benefits__content">
+                     <h3 class="price-benefits__title">
+                        Не сгорает баланс
+                     </h3>
+                     <p class="price-benefits__text">
+                        Нет ограничений по времени
+                     </p>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <!-- reviews -->
+   <section class="reviews">
+
+      <!-- reviews top -->
+      <div class="reviews__top">
+         <div class="container reviews__top-inner">
+
+            <!-- reviews title -->
+            <h2 class="title title--left reviews__title">
+               Отзывы
+            </h2>
+
+            <!-- reviews nav -->
+            <div class="reviews-nav">
+               <button class="reviews-nav__btn reviews-nav__btn--prev">
+                  <svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M22.3541 7H1.57288M1.57288 7L7.51037 1M1.57288 7L7.51037 13" stroke="#07040C" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+               </button>
+               <div class="reviews-nav__pagination-top"></div>
+               <button class="reviews-nav__btn reviews-nav__btn--next">
+                  <svg width="24" height="14" viewBox="0 0 24 14" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M1.552 7L22.3333 7M22.3333 7L16.3958 13M22.3333 7L16.3958 0.999999" stroke="#07040C" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </div>
+
+      <!-- reviews slider -->
+      <div class="reviews__slider">
+         <div class="swiper-wrapper">
+
+            <!-- swiper slide 1 -->
+            <div class="swiper-slide">
+               <div class="reviews-item">
+                  <div class="reviews-item__author">
+                     <img class="reviews-item__photo" src="img/reviews-item-1.webp" width="90" height="90" alt="Кирилл">
+                     <div class="reviews-item__data">
+                        <h3 class="reviews-item__name">
+                           Кирилл
+                        </h3>
+                        <p class="reviews-item__job">
+                           SEO специалист
+                        </p>
+                     </div>
+                  </div>
+                  <div class="reviews-item__content">
+                     <div class="reviews-item__inner">
+                        <h4 class="reviews-item__title">
+                           Лучший сервис!!!
+                        </h4>
+                        <p class="reviews-item__text">
+                           Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие!!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- swiper slide 2 -->
+            <div class="swiper-slide">
+               <div class="reviews-item">
+                  <div class="reviews-item__author">
+                     <img class="reviews-item__photo" width="90" height="90" src="img/reviews-item-2.webp" alt="Иван">
+                     <div class="reviews-item__data">
+                        <h3 class="reviews-item__name">
+                           Иван
+                        </h3>
+                        <p class="reviews-item__job">
+                           SEO студия “Альтернатива”
+                        </p>
+                     </div>
+                  </div>
+                  <div class="reviews-item__content">
+                     <div class="reviews-item__inner">
+                        <h4 class="reviews-item__title">
+                           Значимость этих проблем настолько очевидна :)
+                        </h4>
+                        <p class="reviews-item__text">
+                           Таким образом рамки и место обучения кадров играет важную роль в формировании соответствующий условий активизации.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- swiper slide 3 -->
+            <div class="swiper-slide">
+               <div class="reviews-item">
+                  <div class="reviews-item__author">
+                     <img class="reviews-item__photo" width="90" height="90" src="img/reviews-item-1.webp" alt="Кирилл">
+                     <div class="reviews-item__data">
+                        <h3 class="reviews-item__name">
+                           Кирилл
+                        </h3>
+                        <p class="reviews-item__job">
+                           SEO специалист
+                        </p>
+                     </div>
+                  </div>
+                  <div class="reviews-item__content">
+                     <div class="reviews-item__inner">
+                        <h4 class="reviews-item__title">
+                           Лучший сервис!!!
+                        </h4>
+                        <p class="reviews-item__text">
+                           Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие!!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- swiper slide 4 -->
+            <div class="swiper-slide">
+               <div class="reviews-item">
+                  <div class="reviews-item__author">
+                     <img class="reviews-item__photo" width="90" height="90" src="img/reviews-item-2.webp" alt="Иван">
+                     <div class="reviews-item__data">
+                        <h3 class="reviews-item__name">
+                           Иван
+                        </h3>
+                        <p class="reviews-item__job">
+                           SEO студия “Альтернатива”
+                        </p>
+                     </div>
+                  </div>
+                  <div class="reviews-item__content">
+                     <div class="reviews-item__inner">
+                        <h4 class="reviews-item__title">
+                           Значимость этих проблем настолько очевидна :)
+                        </h4>
+                        <p class="reviews-item__text">
+                           Таким образом рамки и место обучения кадров играет важную роль в формировании соответствующий условий активизации.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- swiper slide 5 -->
+            <div class="swiper-slide">
+               <div class="reviews-item">
+                  <div class="reviews-item__author">
+                     <img class="reviews-item__photo" width="90" height="90" src="img/reviews-item-1.webp" alt="Кирилл">
+                     <div class="reviews-item__data">
+                        <h3 class="reviews-item__name">
+                           Кирилл
+                        </h3>
+                        <p class="reviews-item__job">
+                           SEO специалист
+                        </p>
+                     </div>
+                  </div>
+                  <div class="reviews-item__content">
+                     <div class="reviews-item__inner">
+                        <h4 class="reviews-item__title">
+                           Лучший сервис!!!
+                        </h4>
+                        <p class="reviews-item__text">
+                           Задача организации, в особенности же дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что укрепление и развитие!!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- reviews bottom -->
+      <div class="reviews__bottom">
+         <div class="reviews-nav__pagination-bottom"></div>
+         <button class="btn reviews__btn" data-graph-path="register" data-graph-animation="fadeInUp">
+            Попробовать
+         </button>
+      </div>
+   </section>
+
+   <!-- faq -->
+   <section class="faq" id="faq">
+      <div class="container">
+
+         <!-- faq title -->
+         <h2 class="title faq__title">
+            Популярные вопросы
+         </h2>
+
+         <!-- faq list -->
+         <ul class="faq__list">
+
+            <!-- faq item 1 -->
+            <li class="faq__item">
+               <article class="faq-item faq-item--active">
+                  <div class="faq-item__top">
+                     <h3 class="faq-item__title">
+                        Насколько полной получается семантика?
+                     </h3>
+                     <svg class="faq-item__icon" width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.64587 16L9.06775 8.5L1.64588 0.999999" stroke="#A0A2B4" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                  </div>
+                  <div class="faq-item__content">
+                     <p class="faq-item__text">
+                        Используется сразу несоклько платных, обновляемых баз, общей суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая. Поэтому, гораздо эффективнее взять готовую семантику конкурентов.
+                     </p>
+                  </div>
+               </article>
+            </li>
+
+            <!-- faq item 2 -->
+            <li class="faq__item">
+               <article class="faq-item">
+                  <div class="faq-item__top">
+                     <h3 class="faq-item__title">
+                        Почему не нужно чистить запросы?
+                     </h3>
+                     <svg class="faq-item__icon" width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.64587 16L9.06775 8.5L1.64588 0.999999" stroke="#A0A2B4" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                  </div>
+                  <div class="faq-item__content">
+                     <p class="faq-item__text">
+                        Используется сразу несоклько платных, обновляемых баз, общей суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая. Поэтому, гораздо эффективнее взять готовую семантику конкурентов.
+                     </p>
+                     <p class="faq-item__text">
+                        Используется сразу несоклько платных, обновляемых баз, общей суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая. Поэтому, гораздо эффективнее взять готовую семантику конкурентов.
+                     </p>
+                  </div>
+               </article>
+            </li>
+
+            <!-- faq item 3 -->
+            <li class="faq__item">
+               <article class="faq-item">
+                  <div class="faq-item__top">
+                     <h3 class="faq-item__title">
+                        Возможна ли оплата для юридических лиц?
+                     </h3>
+                     <svg class="faq-item__icon" width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.64587 16L9.06775 8.5L1.64588 0.999999" stroke="#A0A2B4" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                  </div>
+                  <div class="faq-item__content">
+                     <p class="faq-item__text">
+                        Используется сразу несоклько платных, обновляемых баз, общей суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая. Поэтому, гораздо эффективнее взять готовую семантику конкурентов.
+                     </p>
+                  </div>
+               </article>
+            </li>
+
+            <!-- faq item 4 -->
+            <li class="faq__item">
+               <article class="faq-item">
+                  <div class="faq-item__top">
+                     <h3 class="faq-item__title">
+                        Почему класстеризатор не распределяет сразу по нескольким страницам?
+                     </h3>
+                     <svg class="faq-item__icon" width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.64587 16L9.06775 8.5L1.64588 0.999999" stroke="#A0A2B4" stroke-width="1.5" stroke-linecap="round" />
+                     </svg>
+                  </div>
+                  <div class="faq-item__content">
+                     <p class="faq-item__text">
+                        Используется сразу несоклько платных, обновляемых баз, общей суммой 150 миллионов запросов. Сегодня практически не осталось ниш в которых не проработана seo-специалистами семантика. Вероятность найти новые ключи, крайне низкая. Поэтому, гораздо эффективнее взять готовую семантику конкурентов.
+                     </p>
+                  </div>
+               </article>
+            </li>
+         </ul>
+      </div>
+   </section>
+
+   <!-- partners -->
+   <section class="partners">
+      <div class="container">
+
+         <!-- partners title -->
+         <h2 class="title partners__title">
+            Партнерская программа
+         </h2>
+
+         <!-- partners inner -->
+         <div class="partners__inner">
+
+            <!-- partners list -->
+            <ul class="partners-list">
+               <li class="partners-list__item">
+                  <img class="partners-list__icon" src="img/partners-list-1.svg" alt="Приведи друга">
+                  <h3 class="partners-list__title">
+                     Приведи друга
+                  </h3>
+                  <p class="partners-list__text">
+                     Отправьте ему ссылку или промокод
+                  </p>
+               </li>
+               <li class="partners-list__item">
+                  <img class="partners-list__icon" src="img/partners-list-2.svg" alt="После пополнения им баланса">
+                  <h3 class="partners-list__title">
+                     После пополнения им баланса
+                  </h3>
+                  <p class="partners-list__text">
+                     эту сумму (столько же) отправим вам и ему до 500 руб.
+                  </p>
+               </li>
+               <li class="partners-list__item">
+                  <img class="partners-list__icon" src="img/partners-list-3.svg" alt="Если захотите вывести деньги">
+                  <h3 class="partners-list__title">
+                     Если захотите вывести деньги
+                  </h3>
+                  <p class="partners-list__text">
+                     нужно будет показать нам постоянный источник привлечения (защита от спама)
+                  </p>
+               </li>
+            </ul>
+
+            <!-- partners img -->
+            <img class="partners__img" src="img/partners-1.webp" width="620" height="430" alt="Партнерская программа">
+         </div>
+      </div>
+   </section>
+
+   <!-- footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__inner">
+
+            <!-- footer col 1 -->
+            <div class="footer__col">
+               <div class="footer-logo">
+                  <img class="footer-logo__img" src="img/logo-dark.webp" width="204" height="55" alt="Турбо Ядро">
+               </div>
+               <p class="footer__copy">
+                  Турбо Ядро &copy; [2023]. Все права защищены
+               </p>
+            </div>
+
+            <!-- footer col 2 -->
+            <div class="footer__col">
+               <h3 class="footer__title">
+                  Дни работы поддержки
+               </h3>
+               <p class="footer__value">
+                  ПН-ВС. Каждый день
+               </p>
+               <p class="footer__value">
+                  7:00-20:00 по Москве
+               </p>
+            </div>
+
+            <!-- footer col 3 -->
+            <div class="footer__col">
+               <h3 class="footer__title">
+                  Контакты
+               </h3>
+               <a class="footer__value" href="mailto:help@turbo-yadro.ru">
+                  help@turbo-yadro.ru
+               </a>
+               <a class="footer__value" href="tel:79609969576">
+                  +7-960-996-95-76
+               </a>
+            </div>
+
+            <!-- footer col 4 -->
+            <div class="footer__col">
+               <a class="footer__link" href="#">
+                  Пользовательское соглашение
+               </a>
+               <a class="footer__link" href="#">
+                  Политика оплаты и возврата
+               </a>
+               <a class="footer__link" href="#">
+                  Политика использования Cookie
+               </a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- modal -->
+   <div class="graph-modal modal">
+
+      <!-- modal item (register) -->
+      <div class="graph-modal__container modal-item" role="dialog" aria-modal="true" data-graph-target="register">
+         <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M26.3848 8L8 26.3848M26.3848 26.3848L8 8" stroke="#07040C" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+         </button>
+         <div class="graph-modal__content">
+            <h2 class="modal-item__title">
+               Регистрация
+            </h2>
+            <form class="modal-item__form" action="#">
+
+               <!-- modal item form field (nickname) -->
+               <div class="form-field modal-item__form-field">
+                  <label class="form-field__title" for="nickname">
+                     Ваш ник в Телеграмме
+                  </label>
+                  <input class="form-field__input" id="nickname" type="text" placeholder="nickname" required>
+                  <p class="form-field__text">
+                     *введите никнейм без @
+                  </p>
+               </div>
+
+               <!-- modal item form field (password) -->
+               <div class="form-field modal-item__form-field" id="form-field-password">
+                  <label class="form-field__title" for="password">
+                     Пароль
+                  </label>
+                  <input class="form-field__input" id="password" type="password" required>
+               </div>
+
+               <!-- modal item btn 1 -->
+               <button class="btn modal-item__btn" id="btn-password">
+                  Выслать пароль
+               </button>
+
+               <!-- modal item btn 2 -->
+               <button class="btn modal-item__btn" id="btn-login">
+                  Войти
+               </button>
+
+               <!-- modal item btn light -->
+               <button class="btn btn--light modal-item__btn-light" id="btn-login-modal" data-graph-path="login" data-graph-animation="fadeInUp" type="button">
+                  Я уже зарегестрирован
+               </button>
+            </form>
+         </div>
+      </div>
+
+      <!-- modal item (login) -->
+      <div class="graph-modal__container modal-item" role="dialog" aria-modal="true" data-graph-target="login">
+         <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M26.3848 8L8 26.3848M26.3848 26.3848L8 8" stroke="#07040C" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+         </button>
+         <div class="graph-modal__content">
+            <h2 class="modal-item__title">
+               Вход
+            </h2>
+            <form class="modal-item__form" action="#">
+
+               <!-- modal item form field (nickname) -->
+               <div class="form-field modal-item__form-field">
+                  <label class="form-field__title" for="nickname-2">
+                     Ваш логин
+                  </label>
+                  <input class="form-field__input" id="nickname-2" type="text" placeholder="nickname" required>
+                  <p class="form-field__text">
+                     *введите логин без @
+                  </p>
+               </div>
+
+               <!-- modal item form field (password) -->
+               <div class="form-field modal-item__form-field">
+                  <label class="form-field__title" for="password-2">
+                     Пароль
+                  </label>
+                  <input class="form-field__input" id="password-2" type="password" required>
+               </div>
+
+               <!-- modal item row -->
+               <div class="modal-item__row">
+                  <label class="form-checkbox modal-item__form-checkbox">
+                     <input class="form-checkbox__input" type="checkbox" checked>
+                     <span class="form-checkbox__text">
+                        Запомнить меня
+                     </span>
+                  </label>
+                  <a class="modal-item__link" href="#">
+                     Забыли пароль
+                  </a>
+               </div>
+
+               <!-- modal item btn -->
+               <button class="btn modal-item__btn">
+                  Войти
+               </button>
+
+               <!-- modal item btn light -->
+               <button class="btn btn--light modal-item__btn-light" id="btn-register-modal" data-graph-path="register" data-graph-animation="fadeInUp" type="button">
+                  Зарегистрироваться
+               </button>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!-- js -->
+   <script src="libs/jquery.min.js"></script>
+   <script src="libs/fancybox.min.js"></script>
+   <script src="libs/swiper.min.js"></script>
+   <script src="libs/graph-modal.min.js"></script>
+   <script src="js/index.js"></script>
+</body>
+
+</html>
